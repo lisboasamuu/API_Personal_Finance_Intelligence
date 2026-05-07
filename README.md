@@ -2,7 +2,7 @@
 
 API REST inteligente para gerenciamento de finanças pessoais, desenvolvida com Python + Flask.
 
-A aplicação permite cadastrar transações financeiras, categorizar automaticamente despesas e gerar insights financeiros com base nos hábitos do usuário.
+Criei esta minha primeira aplicação que permite cadastrar transações financeiras, categorizar automaticamente despesas e gerar insights financeiros com base nos hábitos do usuário.
 
 ---
 
