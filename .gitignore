@@ -2,7 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
+.vscode
 # C extensions
 *.so
 
@@ -179,3 +179,14 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Banco de dados SQLite
+*.db
+
+# Arquivos de ambiente
+.env.*
+!.env.example
+
+# IDE específica
+.idea/
+.cursor/
