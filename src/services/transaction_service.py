@@ -35,7 +35,7 @@ def get_transaction_by_id(id):
     return Transaction.query.get(id)
 #Pode retornar none se for o caso.
 def update_transaction(transaction, data):
-    if 'descritpion' in data:
+    if 'description' in data:
         transaction.description = data['description']
         if 'category' not in data:
             transaction.category = classify_category(data['description'])

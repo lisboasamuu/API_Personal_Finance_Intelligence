@@ -1,4 +1,4 @@
-from datetime import date
+from datetime import *
 from src.models.transaction import Transaction
 from src.core.database import db
 
@@ -19,7 +19,7 @@ def get_insights():
     ).all()
     prev_transactions = Transaction.query.filter(
         db.extract('year', Transaction.date) == prev_year,
-        db.extract('month', Transaction.month) == prev_month    
+        db.extract('month', Transaction.date) == prev_month    
     )
     #Criando uma lista para armazenar os insights e definindo suas lógicas, como gasto total e onde maior gastou.
     insights_list = []

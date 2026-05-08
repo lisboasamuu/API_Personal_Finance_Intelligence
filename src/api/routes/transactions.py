@@ -60,4 +60,4 @@ def delete(id):
     if not transaction:
          return jsonify({'error': 'transação não encontrada'}), 404
     delete_transaction(transaction)
-    return '', 204
+    return jsonify({'status': 'transação deletada com sucesso'}), 204
